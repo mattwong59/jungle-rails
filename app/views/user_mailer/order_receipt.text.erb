@@ -1,0 +1,13 @@
+Welcome to Jungle
+================================================================================
+
+    Order #<%= @order.id %>
+
+    Thank you for your order!
+
+    Customer Email: <%= @order.email %>
+    Order Total:  <%= @order.total %>
+
+        <%= render partial: 'orders/line_item', collection: @order.line_items %>
+
+            TOTAL: $ <%= @order.total %>
