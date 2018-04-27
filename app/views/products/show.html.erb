@@ -26,14 +26,18 @@
       </div>
     </div>
 
-    <dl>
-      <dt>Review</dt><br>
+    <dt>Reviews</dt>
+    <dl class= "dl-horizontal">
       <% @product.reviews.each do |review| %>
-        <dd><strong>User: </strong><%= review.user_id %></dd>
-        <dd><strong>Description: </strong><%= review.description %></dd>
-        <dd><strong>Rating: </strong><%= review.rating %>  ⭐️'s out of ⭐️⭐️⭐️⭐️⭐️</dd><br>
+        <dt>User: </dt>
+        <dd><%= review.user_id %></dd>
+        <dt>Description: </dt>
+        <dd><%= review.description %></dd>
+        <dt>Rating: </dt>
+        <dd><%= review.rating %>  ⭐️'s out of ⭐️⭐️⭐️⭐️⭐️</dd><br>
       <% end %>
     </dl>
+
 
   </article>
 
