@@ -26,6 +26,23 @@
       </div>
     </div>
 
+
+    <%= form_for :review, url: product_reviews_path(@product.id) do |f| %>
+    <strong>New Review:</strong>
+      <ul>
+        <%= f.fields_for :review do |reviews_form|  %>
+            <%= reviews_form.label :description %>
+            <%= reviews_form.text_area :description %><br>
+
+            <%= reviews_form.label :rating %>
+            <%= reviews_form.select :rating, [1, 2, 3, 4, 5] %><br>
+
+            <%= reviews_form.submit("Submit") %>
+          <% end %>
+      </ul>
+    <% end %>
+
+
     <dt>Reviews</dt>
     <dl class= "dl-horizontal">
       <% @product.reviews.each do |review| %>
