@@ -27,11 +27,11 @@
     </div>
 
     <dl>
-      <dt>Review</dt>
+      <dt>Review</dt><br>
       <% @product.reviews.each do |review| %>
         <dd><strong>User: </strong><%= review.user_id %></dd>
         <dd><strong>Description: </strong><%= review.description %></dd>
-        <dd><strong>Rating: </strong><%= review.rating %>  ⭐️'s out of ⭐️⭐️⭐️⭐️⭐️</dd>
+        <dd><strong>Rating: </strong><%= review.rating %>  ⭐️'s out of ⭐️⭐️⭐️⭐️⭐️</dd><br>
       <% end %>
     </dl>
 
