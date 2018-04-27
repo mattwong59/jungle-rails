@@ -29,6 +29,12 @@ cat1 = Category.find_or_create_by! name: 'Apparel'
 cat2 = Category.find_or_create_by! name: 'Electronics'
 cat3 = Category.find_or_create_by! name: 'Furniture'
 
+#USERS
+User.create :first_name => "Homer", :last_name => "Simpson", :email => "homer@homer.homer", :password_digest => "doh"
+User.create :first_name => "Marge", :last_name => "Simpson", :email => "marge@marge.marge", :password_digest => "mmm"
+User.create :first_name => "Maggie", :last_name => "Simpson", :email => "maggie@maggie.maggie", :password_digest => "baby"
+
+
 ## PRODUCTS
 
 puts "Re-creating Products ..."
@@ -132,5 +138,10 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+#Reviews
+Review.create :product_id => 12, :user_id => 1, :description => "great", :rating => 4
+Review.create :product_id => 12, :user_id => 2, :description => "awesome", :rating => 5
+Review.create :product_id => 11, :user_id => 1, :description => "fine", :rating => 3
+Review.create :product_id => 11, :user_id => 2, :description => "meh", :rating => 2
 
 puts "DONE!"
