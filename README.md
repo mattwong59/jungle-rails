@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. This Lighthouse Labs project involved inheriting code, fixing bugs, and implementing smaller features.
 
 
 ## Setup
@@ -14,6 +14,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 7. Sign up for a Stripe account
 8. Put Stripe (test) keys into appropriate .env vars
 9. Run `bin/rails s -b 0.0.0.0` to start the server
+10. Visit http://localhost:3000/ in your browser
 
 ## Stripe Testing
 
