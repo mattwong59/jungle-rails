@@ -26,3 +26,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+##Screenshots
+![Category Page](https://github.com/mattwong59/jungle-rails/blob/master/docs/categories-apparel.png)
+![Product Page](https://github.com/mattwong59/jungle-rails/blob/master/docs/product-page.png)
+![Order Page](https://github.com/mattwong59/jungle-rails/blob/master/docs/jungle-order-page.png)
